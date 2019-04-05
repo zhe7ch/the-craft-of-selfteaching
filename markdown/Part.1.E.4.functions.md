@@ -59,7 +59,7 @@ print(f'{name} is {age} years old.')
     Ann is 22 years old.
 
 
-但这并不是 `print()` 这个函数的功能，这实际上是 [`f-string`](https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting) 的功能，`f-string` 中用花括号 `{}` 扩起来的部分是表达式，最终转换成字符串的时候，那些表达式的值（而不是变量或者表达式本身）会被插入相应的位置……
+但这并不是 `print()` 这个函数的功能，这实际上是 [`f-string`](https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting) 的功能，`f-string` 中用花括号 `{}` 括起来的部分是表达式，最终转换成字符串的时候，那些表达式的值（而不是变量或者表达式本身）会被插入相应的位置……
 ```python
 name = 'Ann'
 age = '22'
@@ -128,7 +128,7 @@ print(print(1))
 
 在 Python 中，函数的参数，有两种：
 > * **位置参数**（Positional Arguments，在官方文档里常被缩写为 *arg*）
-> * **关键字参数**（Keyword Arguments，在官方文档里常被缩写为 *karg*）
+> * **关键字参数**（Keyword Arguments，在官方文档里常被缩写为 *kwarg*）
 
 在函数定义中，带有 `=` 的，即，已为其设定了默认值的参数，叫做 Keyword Arguments，其它的是 Positional Arguments。
 
@@ -160,7 +160,7 @@ sorted('abdc', reverse=True)
 它接收且必须接收两个参数。
 
 > * 当你调用这个函数的时候，括号里写的第一个参数，是被除数，第二个参数是除数 —— 此为该函数的输入；
-> * 而它的返回值，是一个元组（Tupple，至于这是什么东西，后面讲清楚），其中包括两个值，第一个是商，第二个是余 —— 此为该函数的输出。
+> * 而它的返回值，是一个元组（Tuple，至于这是什么东西，后面讲清楚），其中包括两个值，第一个是商，第二个是余 —— 此为该函数的输出。
 
 作为 “这个函数的用户”，你不能（事实上也没必要）调换这两个参数的意义。因为，根据定义，被传递的值的意义就是由参数的位置决定的。
 ```python
